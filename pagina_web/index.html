@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/app.js"></script>
+    <title>Clases de programacion con el Juanchito</title>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <label class="bold f-size-2" ><b>Clases</b></label>
+            <div class="d-flex-column">
+                <div id="menu-clase1" class="cursor-pointer" onclick="mostrarContenidoClase(0)">
+                    <label class="cursor-pointer f-size-1-5">Clase 1</label>
+                    <div id="carrusel-1" class="d-none animate f-size-1-5">
+                        <label class="cursor-pointer " onclick="mostrarContenidoClase(0, 'conceptos')">Conceptos</label>
+                        <label class="cursor-pointer " onclick="mostrarContenidoClase(0, 'codigo')">Código</label>
+                        <label class="cursor-pointer " onclick="mostrarContenidoClase(0, 'tareas')">Tareas</label>
+                    </div>
+                </div>
+                <div id="menu-clase2" class="cursor-pointer" onclick="mostrarContenidoClase(1)">
+                    <label class="cursor-pointer f-size-1-5">Clase 2</label>
+                    <div id="carrusel-2" class="d-none animate f-size-1-5">
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(1, 'conceptos')">Conceptos</label>
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(1, 'codigo')">Código</label>
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(1, 'tareas')">Tareas</label>
+                    </div>
+                </div>
+                <div id="menu-clase3" class="cursor-pointer" onclick="mostrarContenidoClase(2)">
+                    <label class="cursor-pointer f-size-1-5">Clase 3</label>
+                    <div id="carrusel-3" class="d-none animate f-size-1-5">
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(2, 'conceptos')">Conceptos</label>
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(2, 'codigo')">Código</label>
+                        <label class="cursor-pointer "onclick="mostrarContenidoClase(2, 'tareas')">Tareas</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido overflow-y-scroll">
+            <div class="animate" id="contenido-1">
+                <div class="f-size-2 bold align-text-center">
+                    <label>Clase 1: Variables, sintaxis y tipos de variables </label>
+                </div>
+                <div class="contenido-clase align-text-left">
+                    <div id="conceptos-1" class="animate">
+                        <div>
+                            <div class="f-size-2 add-marinig-bottom-1">Conceptos</div>
+                            <ol>
+                                <li> <label class="bold f-size-1-5">Variable</label>: Entidad dentro del programa que representa y almacena un valor.</li>
+                                <li>
+                                    <div class="bold f-size-1-5">Tipos de variables:</div>
+                                    <ul>
+                                        <li><label  class="bold">Int</label>: Numeros enteros. Ejemplos: <label  class="bold">nota = 1, kilos = 2, distancia = 2</label>.</li>
+                                        <li><label  class="bold">Float</label>: Numeros decimales. Ejemplos: <label  class="bold">nota = 1.2, kilos = 2.001, distancia = 2.434</label>.</li>
+                                        <li><label  class="bold">String</label>: Palabras o cadena de caracteres. Ejemplos: <label  class="bold">producto = "manzana", nombre = "Juanchito"</label>.</li>
+                                    </ul>
+                                    </div>
+                                </li>
+                            </ol>
+                        <div>
+                    </div>
+                </div>
+                <div id="tareas-1" class="animate d-none">
+                    <div class="f-size-2 add-marinig-bottom-1">Tareas</div>
+                    <label for="">Escriba un programa en python que:</label>
+                    <ol>
+                        <li>Pida un número  de libras, convierta ese número de libras a kilogramos y lo muestre en la pantalla.</li>
+                        <li>Pida un número de kilómetros, lo convierta a millas y lo muestre en la pantalla.</li>
+                        <li>Pida 5 productos diferentes (arroz, pollo, huevos. Etc), el precio de cada uno , calcule el precio de todos los artículos y lo muestre en pantalla</li>
+                    </ol>
+                </div>
+                <div id="codigo-1" class="d-none animate">
+                    <div class="f-size-2 add-marinig-bottom-1">Código</div>
+                    <pre  class="prettyprint lang-py codigo">
+# print("Programa para calcular el area de un circulo.")
+
+# radio = int(input("Ingrese el valor del radio del circulo (numero entero):"))
+                        
+# pi = 3.141516
+                        
+                        
+# area = pi * radio * radio
+                        
+# print("El area del circulo es:")
+# print(area)
+                        
+                        
+# Prioridad de las operaciones:
+# 1. Multiplicaciones y divisiones
+# 2. Sumas y restas
+
+
+print("Programa para despejar Z cuando X + Y + Z = 100")
+
+
+x = int(input("Ingrese el valor de X"))
+y = int(input("Ingrese el valor de Y"))
+resultado = 100
+z = resultado - (x + y)
+print("El valor de Z es:")
+print(z)
+
+
+# Proxima clase:
+# 1. Condicionales
+# 2. Ciclos
+                    </pre>
+                </div>   
+            </div>
+            </div>
+            <div class="animate d-none" id="contenido-2">
+                <div class="f-size-2 bold align-text-center">
+                    <label>Clase 2: Condicionales</label>
+                </div>
+                <div class="contenido-clase align-text-left">
+                    <div id="conceptos-2" class="animate">
+                        <div>
+                            <div class="f-size-2 add-marinig-bottom-1">Conceptos</div>
+                            <ol>
+                                <li> <label class="bold f-size-1-5">Tipo de variable booleana</label>: True o False.</li>
+                                <li> <label class="bold f-size-1-5">Operadores logicos</label>: and, or, not.</li>
+                                <li> <label class="bold f-size-1-5">Operadores relacionales</label>: <, >, ==, <=, >=</li>
+                                <li> <label class="bold f-size-1-5">Palabras reservadas</label>: if, else</li>
+                                <li>
+                                    <div class="bold f-size-1-5">Tabla de verdades:</div>
+                                    <ul>
+                                       <li>and</li>
+                                        <div class="d-flex-column tabla-de-verdad">
+                                            <div>True and True = True</div>
+                                            <div>True and False = False</div>
+                                            <div>False and True = False</div>
+                                            <div>False and False = False</div>
+                                        </div> 
+                                        <li>or</li>
+                                        <div class="d-flex-column tabla-de-verdad">
+                                            <div>True or True = True</div>
+                                            <div>True or False = True</div>
+                                            <div>False or True = True</div>
+                                            <div>False or False = False</div>
+                                        </div> 
+                                    </ul>
+                                    </div>
+                                </li>
+                            </ol>
+                        <div>
+                    </div>
+                </div>
+                <div id="tareas-2" class="animate d-none">
+                    <div class="f-size-2 add-marinig-bottom-1">Tareas</div>
+                    <label for="">Escriba un programa en python que:</label>
+                    <ol>
+                        <li> Pregunte al usuario si es intolerante a la lactosa, si es intolerante: pregunta si es alergico a los mariscos, si es alergico: imprime un mensaje diciendo que no tenemos platos para el.
+                             Si no es intolerante a la lactosa, se ofrece inmediatamente el postre de tres leches. Si es intolerante a la lactosa, pero no es alergico a los mariscos, se le ofrece una deliciosa cazuela de mariscos.
+                    </ol>
+                </div>
+                <div id="codigo-2" class="d-none animate">
+                    <div class="f-size-2 add-marinig-bottom-1">Código</div>
+                    <pre  class="prettyprint lang-py codigo">
+intolerante_a_lactosa = int(input("Usted es intolerante a la lactosa? (1= si, 2=no)"))
+alergico_a_mariscos = bool(input("Usted es alergico a los mariscos? (1= si, 2=no)"))
+# alergico_al_mani = bool(input("Usted es alergico al mani?"))
+
+
+# Pregunto si es intolerante a la lactosa, solamente si es intolerante, le pregunto si es alergico a los mariscos. Si no es intolerante
+# le ofrezco el postre de tres leches.
+
+if (intolerante_a_lactosa == 2):
+    print("Puede pedir el postre de tres leches")
+else:
+    print("No puede pedir el postre de tres leches")
+
+if(alergico_a_mariscos==2):
+    print("Puede pedir la cazuela de mariscos")
+else:
+    print("No puede pedir la cazuela de mariscos")                        
+                    </pre>
+                </div>   
+            </div>
+            </div>
+            <div class="animate d-none" id="contenido-3">
+                <div class="f-size-2 bold align-text-center">
+                    <label>Clase 3: Mas condicionales</label>
+                </div>
+                <div class="contenido-clase align-text-left">
+                    <div id="conceptos-3" class="animate">
+                        <div>
+                            <div class="f-size-2 add-marinig-bottom-1">Conceptos</div>
+                            <ol>
+                                <li> <label class="bold f-size-1-5">Condicionales</label>: los condicionales nos permiten ejecutar lineas de codigo si se cumple una condicion o no.</li>
+                                <li>
+                                    <div class="bold f-size-1-5">Palabras reservadas</div>
+                                    <ul>
+                                        <li><label  class="bold">if</label>: esta palabra indica el comienzo de un condicional.</li>
+                                        <li><label  class="bold">else</label>: esta palabra indica la porcion de codigo que se ejecutara si NO se cumple la condicion que se encuentra dentro del if.</li>
+                                        <li><label  class="bold">elif</label>: esta palabra indica la pocion de codigo que se ejecutara si NO se cumple la condicion que se encuentra dentro del if y permite usar un condicional.</li>
+                                    </ul>
+                                    </div>
+                                </li>
+                                    <div class="bold f-size-1-5">Sintaxis</div>
+                                        <pre class="prettyprint lang-py codigo">
+if (condicion1):
+    # codigo a ejecutar si se cumple la condicion1
+    # puede tener varias lineas
+elif (condicion2):
+    # codigo a ejecutar si NO se cumple la condicion1 y SI se cumple la conducion2
+    # puede tener varias lineas
+else:
+    # codigo a ejecutar si NO se cumple condicion1 ni condicion2.
+    # puede tener varias lineas
+                                        </pre>
+                                        <label for="">Hay que tener en cuenta los espacios, estos son los que indican cuales lineas se van a ejecutar.</label>
+                                    </div>
+                            </ol>
+                        <div>
+                    </div>
+                </div>
+                <div id="tareas-3" class="animate d-none">
+                    <div class="f-size-2 add-marinig-bottom-1">Tareas</div>
+                    <label for="">Escriba un programa en python que:</label>
+                    <ol>
+                        <li>Lea tres valores numericos y almacenarlos en las variables A, B y C respectivamente.</li>
+                        <li>Imprima cual es el mayor y cuál es el menor (Recuerde constatar que los tres valores introducidos por el teclado sean valores distintos).</li>
+                        <li>Presente un mensaje de alerta en caso de que se detecte la introducción de valores iguales.</li>
+                    </ol>
+                </div>
+                <div id="codigo-3" class="d-none animate">
+                    <div class="f-size-2 add-marinig-bottom-1">Código</div>
+                    <pre  class="prettyprint lang-py codigo">
+# 1. Solucionar la tarea
+# 2. Condicionales (mas profundo)
+
+"""
+Escriba un programa en python que:
+Pregunte al usuario si es intolerante a la lactosa, 
+si es intolerante: pregunta si es alergico a los mariscos, 
+si es alergico: imprime un mensaje diciendo que no tenemos platos para el. 
+Si no es intolerante a la lactosa, se ofrece inmediatamente el postre de tres leches. 
+Si es intolerante a la lactosa, pero no es alergico a los mariscos, 
+se le ofrece una deliciosa cazuela de mariscos.
+"""
+
+# intolerante_a_lactosa = int(input("Usted es intolerante a la lactosa? (1= si, 2=no)"))
+
+# if(intolerante_a_lactosa == 1):
+#     alergico_a_mariscos = int(input("Usted es alergico a los mariscos? (1= si, 2=no)"))
+#     if(alergico_a_mariscos == 1):
+#         print("No tenemos platos para usted, perdon :(")
+#     else:
+#         print("Le podemos ofrecer la deliciosa cazuela de mariscos.")
+# else:
+#     print("Le podemos ofrecer el delicioso postre de tres leches")
+
+
+"""
+Escriba un programa en python que:
+Pregunte dos numeros e imprima cual de ellos el el menor y cual es el mayor
+"""
+
+# numero2 = float(input("Por favor ingrese el primer numero"))
+# numero1 = float(input("Por favor ingrese el segundo numero"))
+
+# if( numero1 > numero2 ):
+#     print(f"El numero mayor es: {numero1}")
+#     print(f"El numero menor es: {numero2}")
+# elif( numero1 != numero2 ):
+#     print(f"El numero mayor es {numero2}")
+#     print(f"El numero menor es {numero1}")
+# else:
+#     print("Ingreso dos numeros iguales")
+
+
+"""
+Escriba un programa en python que:
+Pregunte dos numeros inicialmente, luego pregunte un tercer numero e imprima si el tercer numero esta
+dentro del rango de los dos primeros.
+"""
+
+numero1 = float(input("Por favor ingrese el primer numero"))
+numero2 = float(input("Por favor ingrese el segundo numero"))
+numero3 = float(input("Por favor ingrese el tercer numero"))
+# numero1 = 5
+# numero2 = 1
+# numero3 = 2
+# temporal = 1
+
+if (numero1>numero2):
+    temporal=numero2
+    numero2=numero1
+    numero1=temporal
+if( numero3 >= numero1 and numero3 <= numero2 ):
+    print("esta dentro del rango")
+else:
+    print("NO esta dentro del rango")
+                        
+                        
+                    </pre>
+                </div>   
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
